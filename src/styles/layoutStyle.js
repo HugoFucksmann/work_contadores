@@ -1,13 +1,23 @@
-import { makeStyles } from '@material-ui/core';
-import { isMobile } from 'react-device-detect';
-
+import { makeStyles } from "@material-ui/core";
 
 const layoutStyle = makeStyles((theme) => ({
-   fullPage: {
-       height: "100vh",
-       width: "100vh",
-       backgroundColor: "#000"
-   }
+    fullScreen: {
+        height: "100vh",
+        backgroundColor: "#d4d4d4",
+    },
+    headerLayout: {
+        height: "10vh",
+        backgroundColor: "red",
+    },
+    bodyLayout: {
+        height: "80vh",
+        marginRight: "8%",
+        marginLeft: "8%",
+    },
+    footerLayout: {
+        height: "10vh",
+        backgroundColor: "green",
+    },
 }));
 
 export default layoutStyle;

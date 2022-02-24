@@ -1,13 +1,9 @@
+import layoutStyle from "../styles/layoutStyle";
 
+const Footer = (props) => {
+    const classes = layoutStyle(props);
 
-
-
-const Footer = ({children}) => {
-
-
-    return <div>
-        {children}
-    </div>
-}
+    return <div className={classes.footerLayout}>{props.children}</div>;
+};
 
 export default Footer;

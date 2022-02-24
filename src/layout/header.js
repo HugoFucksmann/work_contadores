@@ -1,11 +1,9 @@
+import layoutStyle from "../styles/layoutStyle";
 
+const Header = (props) => {
+    const classes = layoutStyle(props);
 
-const Header = ({children}) => {
-
-
-    return <div>
-        {children}
-    </div>
-}
+    return <div className={classes.headerLayout}>{props.children}</div>;
+};
 
 export default Header;

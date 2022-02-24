@@ -1,11 +1,9 @@
+import layoutStyle from "../styles/layoutStyle";
 
+const Body = (props) => {
+    const classes = layoutStyle(props);
 
-const Body = ({children}) => {
-
-
-    return <div>
-        {children}
-    </div>
-}
+    return <div className={classes.bodyLayout}>{props.children}</div>;
+};
 
 export default Body;
