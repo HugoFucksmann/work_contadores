@@ -1,7 +1,5 @@
 import { Card, makeStyles } from "@material-ui/core";
-import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
 const CardUno = ({ title, bodytext }) => {
@@ -12,9 +10,11 @@ const CardUno = ({ title, bodytext }) => {
                 <Typography gutterBottom variant="h5" component="div">
                     {title}
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
-                    {bodytext}
-                </Typography>
+                {bodytext && (
+                    <Typography variant="body2" color="text.secondary">
+                        {bodytext}
+                    </Typography>
+                )}
             </CardContent>
         </Card>
     );
@@ -23,6 +23,8 @@ const CardUno = ({ title, bodytext }) => {
 const cardStyle = makeStyles(() => ({
     cardstyle: {
         textAlign: "center",
+        height: 220,
     },
 }));
+
 export default CardUno;
