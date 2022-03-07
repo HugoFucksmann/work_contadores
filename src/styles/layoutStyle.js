@@ -10,9 +10,10 @@ const layoutStyle = makeStyles((theme) => ({
     backgroundColor: "red",
   },
   bodyLayout: {
-    height: "90vh",
-    backgroundColor: "#ededed",
+    height: "100vh",
+    //backgroundColor: "#ededed",
     margin: "5vh",
+    backgroundColor: "red",
   },
   footerLayout: {
     height: "10vh",
